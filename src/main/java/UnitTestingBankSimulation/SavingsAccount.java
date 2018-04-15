@@ -1,6 +1,6 @@
-package banking;
+package UnitTestingBankSimulation;
 
-import static banking.TransactionType.*;
+import static UnitTestingBankSimulation.TransactionType.*;
 
 /**
  * @author wpollock

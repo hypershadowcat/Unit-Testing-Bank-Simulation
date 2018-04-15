@@ -1,4 +1,4 @@
-package banking;
+package UnitTestingBankSimulation;
 
 /** A list of the possible types of transactions in the banking simulation.
  * @author wpollock

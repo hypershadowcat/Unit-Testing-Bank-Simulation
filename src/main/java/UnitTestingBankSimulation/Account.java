@@ -1,4 +1,4 @@
-package banking;
+package UnitTestingBankSimulation;
 
 import java.time.*;
 import java.util.*;
