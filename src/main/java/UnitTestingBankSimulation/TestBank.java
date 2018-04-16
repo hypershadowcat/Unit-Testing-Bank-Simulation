@@ -80,5 +80,26 @@ public class TestBank {
 		assertEquals(customerSortedSet.first().getFirstName(), firstName);
 	}
 
-	
+	// Method getCustometList test
+	@Test
+	public void testGetCustomerList() {
+		assertNotNull(customerList);
+		
+		if (customerList != null) {
+			// Checks customer's last and first names in the list
+			for (int i = 0; i < customerList.size(); i++) {
+				Customer customer = customerList.get(i);
+				assertEquals(customer.getLastName(), lastName); // when last name is correct -- true
+				assertEquals(customer.getFirstName(), firstName); // when first name is correct -- true
+			}
+		}
+	}
+
+	// Method removeCustomer test
+	@Test
+	public void testRemoveCustomer() {
+		assertEquals(2, customerList.size()); // checks if list has 2 customers
+		testBank.removeCustomer(testCustomer_2); // removes the customer
+		assertEquals(1, customerList.size()); // checks if list has only 1 customers
+	}
 }
