@@ -6,7 +6,7 @@ import java.util.SortedSet;
 import org.junit.*;
 
 public class TestBank {
-
+	
 	Bank testBank;
 	final String bankName = "Test Name";
 	final String lastName = "Panchenko";
@@ -26,7 +26,7 @@ public class TestBank {
 		testCustomer_2 = testBank.addCustomer(lastName, firstName);
 	}
 
-	// Bank constructor test
+	// Test for Bank constructor
 	@Test
 	public void testBank() {
 		// Asserts that the object isn't null. If it is an AssertionError is thrown
@@ -36,7 +36,7 @@ public class TestBank {
 		assertEquals(testBank.getNAME(), bankName); // when bank name is correct -- true
 	}
 
-	// Method getAllAccounts test
+	// Test for getAllAccounts method
 	@Test
 	public void testGetAllAccounts() {
 		final double accountBalance = 741.95;
@@ -55,13 +55,13 @@ public class TestBank {
 		assertTrue(accountsSet.first().getBalance() == accountBalance); // when 1st balance is correct -- true
 	}
 	
-	// Method addCustomer test
+	// Test for addCustomer method
 	@Test
 	public void testAddCustomer() {
 		assertNotNull(testCustomer_1); // when testCustomer_1 returned by the method -- true
 	}
 
-	// Method getCustomer test
+	// Test for getCustomer method
 	@Test
 	public void testGetCustomer() {
 		Customer customer = testBank.getCustomer(testCustomer_1);
@@ -70,7 +70,7 @@ public class TestBank {
 		assertEquals(customer.getFirstName(), firstName); // when last name is correct -- true
 	}
 	
-	// Method getAllCustomers test
+	// Test for getAllCustomers method
 	@Test
 	public void testGetAllCustomers() {
 		// Creates the customer set
@@ -80,7 +80,7 @@ public class TestBank {
 		assertEquals(customerSortedSet.first().getFirstName(), firstName);
 	}
 
-	// Method getCustometList test
+	// Test for getCustometList method
 	@Test
 	public void testGetCustomerList() {
 		assertNotNull(customerList);
@@ -95,7 +95,7 @@ public class TestBank {
 		}
 	}
 
-	// Method removeCustomer test
+	// Test for removeCustomer method
 	@Test
 	public void testRemoveCustomer() {
 		assertEquals(2, customerList.size()); // checks if list has 2 customers
