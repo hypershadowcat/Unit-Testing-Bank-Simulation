@@ -2,7 +2,7 @@
 
 ## Team Members:
 * Craig Anderson -- TestSavingsAccount.java & TestTransaction.java ()
-* Ihor Panchenko -- TestBank.java:
+Ihor Panchenko -- TestBank.java:
                       * testBank, testGetAllAccounts, testAddCustomer, testGetCustomer, 
                   testGetAllCustomers, testGetCustomerList, testRemoveCustomer)
 * Juliet Mercado -- TestAccount.java ()
