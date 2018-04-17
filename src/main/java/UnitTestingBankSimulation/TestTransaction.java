@@ -19,11 +19,12 @@ public class TestTransaction {
 	final double initialBalance = 800.23;
 	final double rate = 2.1;
 	final String description = "Test Description";
-	private final int id;
-    private final LocalDateTime timestamp;
-    private final TransactionType type;
-    private final double amount;
-    private final String description;
+	
+	final int id;
+    final LocalDateTime timestamp;
+    final TransactionType type;
+    final double amount;
+    final String description;
 	
 	@Before
 	public void init() {
