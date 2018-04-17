@@ -5,6 +5,7 @@ import java.util.List;
 import java.util.SortedSet;
 import org.junit.*;
 
+// Written by Ihor Panchenko, 2018
 public class TestBank {
 	
 	Bank testBank;
