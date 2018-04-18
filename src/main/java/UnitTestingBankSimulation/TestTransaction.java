@@ -26,7 +26,5 @@ public class TestTransaction {
 		assertEquals(testTransaction.getDescription(), description);
 		// Checks the amount
 		assertTrue(testTransaction.getAmount() == amount);
-
 	}
-
 }
