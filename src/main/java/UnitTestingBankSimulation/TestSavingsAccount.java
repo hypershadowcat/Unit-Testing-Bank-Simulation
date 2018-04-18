@@ -1,11 +1,11 @@
 package UnitTestingBankSimulation;
 
 import static org.junit.Assert.*;
-
 import java.util.List;
-
 import org.junit.Before;
 import org.junit.Test;
+
+// By Craig Anderson
 
 public class TestSavingsAccount {
 
@@ -27,7 +27,6 @@ public class TestSavingsAccount {
 		testCustomer = new Customer(testBank, lastName, firstName);
 		// Creates Saving Account object
 		testSavings = new SavingsAccount(testCustomer, initialBalance, description);
-
 	}
 
 	@Test
@@ -45,5 +44,4 @@ public class TestSavingsAccount {
 		testSavings.addInterestTransaction(rate);
 		assertNotNull(rate);
 	}
-
 }
