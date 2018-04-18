@@ -8,7 +8,7 @@ import org.junit.Before;
 import org.junit.Test;
 
 public class TestSavingsAccount {
-	
+
 	Bank testBank;
 	Customer testCustomer;
 	SavingsAccount testSavings;
@@ -18,8 +18,7 @@ public class TestSavingsAccount {
 	final double initialBalance = 800.23;
 	final double rate = 2.1;
 	final String description = "Test Description";
-	
-	
+
 	@Before
 	public void init() {
 		// Creates Bank object
@@ -28,17 +27,19 @@ public class TestSavingsAccount {
 		testCustomer = new Customer(testBank, lastName, firstName);
 		// Creates Saving Account object
 		testSavings = new SavingsAccount(testCustomer, initialBalance, description);
-		
+
 	}
+
 	@Test
 	public void testSavingsAccount() {
-		//Tests 
+		// Tests
 		assertNotNull(testSavings);
-		
+
 		assertEquals(testSavings.getAccountDescription(), description);
-		
+
 		assertNotNull(initialBalance);
 	}
+
 	@Test
 	public void testAddInterest() {
 		testSavings.addInterestTransaction(rate);
