@@ -5,7 +5,7 @@ import java.util.List;
 import org.junit.Before;
 import org.junit.Test;
 
-// By Craig Anderson
+/// Written by Juliet Mercado & Craig Anderson
 
 public class TestSavingsAccount {
 
@@ -31,11 +31,11 @@ public class TestSavingsAccount {
 
 	@Test
 	public void testSavingsAccount() {
-		// Tests
+		// Tests there is a saving account
 		assertNotNull(testSavings);
-
+		// Check descriptions
 		assertEquals(testSavings.getAccountDescription(), description);
-
+		// Checks initial balance
 		assertNotNull(initialBalance);
 	}
 
