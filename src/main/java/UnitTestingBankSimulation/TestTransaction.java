@@ -5,7 +5,7 @@ import java.time.LocalDateTime;
 import org.junit.Before;
 import org.junit.Test;
 
-// By Craig Anderson, 04-18-18
+//Written by Juliet Mercado & Craig Anderson
 
 public class TestTransaction {
 
