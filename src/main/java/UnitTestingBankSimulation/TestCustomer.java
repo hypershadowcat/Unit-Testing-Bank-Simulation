@@ -8,15 +8,19 @@ import org.junit.*;
 public class TestCustomer {
 	
     Customer testCustomer;
+    SavingsAccount testAccount;
     final Bank testBank = new Bank("testBank");
     final String testLastName = "Bobob";
     final String testFirstName = "Jojo";
+    final String testDesc = "Joeblow's Savings";
+    final double testInitBal = 1000;
     
     // Set up clean slate for all tests
     @Before
     public void init() {
     	// Create customer object
     	testCustomer = new Customer(testBank, testLastName, testFirstName);
+    	testAccount = testCustomer.addSavingsAccount(testInitBal, testDesc);
     }
     
     @Test
@@ -48,11 +52,8 @@ public class TestCustomer {
     
     @Test
     public void testAddSavingsAccount() {
-    	final double testInitBal = 1000;
-    	final String testDesc = "Joeblow's Savings";
-    	
-    	testCustomer.addSavingsAccount(testInitBal, testDesc);
-    	
+    	assertNotNull(testAccount);
+    	assertEquals(testAccount.getAccountDescription(), testDesc); // Ensures description is accurate
     	assertEquals(testCustomer.getSavingsAccount(), testInitBal, 0.0006); // getSavingsAccount method added to adequately test this function.
     }
     
