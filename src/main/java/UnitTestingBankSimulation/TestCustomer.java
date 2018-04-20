@@ -54,4 +54,11 @@ public class TestCustomer {
     	assertEquals(testCustomer.getSavingsAccount(), testInitBal, 0.0006); // getSavingsAccount method added to adequately test this function.
     }
     
+    @Test
+    public void testRemoveAccount() {
+    	final String testAccountID = "0001";
+    	
+    	assertEquals(testCustomer.getCustomerAccounts(), testAccountID);
+    }
+    
 }
