@@ -24,6 +24,8 @@ public class TestCustomer {
     	assertNotNull(testCustomer); // Ensures the customer object exists.
     	
     	assertEquals(testCustomer.getBank(), testBank); // Ensures the bank name of customer object is correct bank for test.
+    	assertEquals(testCustomer.getLastName(), testLastName);
+    	assertEquals(testCustomer.getFirstName(), testFirstName);
     }
     
     @Test
