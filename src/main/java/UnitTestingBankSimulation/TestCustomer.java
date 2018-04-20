@@ -26,6 +26,32 @@ public class TestCustomer {
     	assertEquals(testCustomer.getBank(), testBank); // Ensures the bank name of customer object is correct bank for test.
     }
     
+    @Test
+    public void testYtdFees() {
+    	final double ytdFees = 145.00;
+    	
+    	double testFees = testCustomer.ytdFees();
+    	
+    	assertEquals(testFees, ytdFees, 0.0006);
+    }
     
+    @Test
+    public void testYtdInterest() {
+    	final double ytdInterest = 0.06;
+    	
+    	double testInterest = testCustomer.ytdInterest();
+    	
+    	assertEquals(testInterest, ytdInterest, 0.0006);
+    }
+    
+    @Test
+    public void testAddSavingsAccount() {
+    	final double testInitBal = 1000;
+    	final String testDesc = "Joeblow's Savings";
+    	
+    	testCustomer.addSavingsAccount(testInitBal, testDesc);
+    	
+    	assertEquals(testCustomer.getSavingsAccount(), testInitBal, 0.0006); // getSavingsAccount method added to adequately test this function.
+    }
     
 }

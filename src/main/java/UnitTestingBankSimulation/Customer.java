@@ -92,6 +92,10 @@ public class Customer implements Comparable<Customer> {
     public SavingsAccount addSavingsAccount (double initBal,  String desc) {
         return null;  // Stub
     }
+    
+    public double getSavingsAccount() {
+    	return 0.0;
+    }
 
     /** Deletes a given account (in the real world, just marks it as defunct
      *  or something)
