@@ -59,9 +59,11 @@ public class TestCustomer {
     
     @Test
     public void testRemoveAccount() {
-    	testCustomer.removeAccount("001");
+		String testAccountID = "001";
+		testCustomer.getAccount(testAccountID);
+    	testCustomer.removeAccount(testAccountID);
     	
-    	assertNull(testCustomer); // Ensures the account was removed and the object doesn't exist.
+    	assertNull(testAccountID); // Ensures the account was removed and the object doesn't exist.
     }
     
 }
